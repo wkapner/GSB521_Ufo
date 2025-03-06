@@ -11,7 +11,7 @@ function App() {
 
   // Load CSV file automatically when the app starts
   useEffect(() => {
-    fetch('https://ufodata2.s3.us-east-2.amazonaws.com/ufoData.csv')
+    fetch('s3://ufodata2/ufoData.csv')
       .then(response => response.text())
       .then(csvText => {
         Papa.parse(csvText, {
@@ -110,16 +110,7 @@ function App() {
   );
 }
 
-import { Storage } from 'aws-amplify';
 
-async function getCSV() {
-  try {
-    const file = await Storage.get('mydata.csv', { level: 'public' });
-    console.log('File URL:', file);
-  } catch (error) {
-    console.error('Error getting file:', error);
-  }
-}
 
 
 export default App;
