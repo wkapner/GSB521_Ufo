@@ -110,4 +110,16 @@ function App() {
   );
 }
 
+import { Storage } from 'aws-amplify';
+
+async function getCSV() {
+  try {
+    const file = await Storage.get('mydata.csv', { level: 'public' });
+    console.log('File URL:', file);
+  } catch (error) {
+    console.error('Error getting file:', error);
+  }
+}
+
+
 export default App;
