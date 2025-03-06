@@ -1,0 +1,107 @@
+/* Entire App Background */
+body {
+  background-color: black;
+  color: limegreen;
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+}
+
+/* Big Glowing Title */
+.big-title {
+  font-size: 2.5em;
+  font-weight: bold;
+  text-shadow: 0 0 10px limegreen, 0 0 20px limegreen;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  font-size: 1.5em;
+  text-shadow: 0 0 10px limegreen;
+  margin-bottom: 20px;
+}
+
+/* Main Content Layout */
+.content-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+/* UFO Report Box */
+.ufo-box {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px limegreen;
+  width: 350px;
+  min-height: 250px;
+  text-align: left;
+  color: limegreen;
+  font-size: 1.1em;
+}
+
+/* Individual UFO Report */
+.ufo-report {
+  margin-bottom: 15px;
+}
+
+.ufo-report hr {
+  border: 0;
+  height: 2px;
+  background: limegreen;
+  margin: 8px 0;
+}
+
+/* Search Box Styling */
+.search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px limegreen;
+  width: 350px;
+}
+
+/* Input & Button */
+.search-container input,
+.search-container button {
+  font-size: 1.2em;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 5px;
+  border: 2px solid limegreen;
+  background-color: black;
+  color: limegreen;
+  box-shadow: 0 0 10px limegreen;
+}
+
+.search-container button {
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.search-container button:hover {
+  background-color: limegreen;
+  color: black;
+}
+
+/* Message Output */
+.message {
+  font-size: 1.4em;
+  font-weight: bold;
+  text-shadow: 0 0 10px limegreen;
+  margin-top: 15px;
+}
+
+/* Alien Image */
+.alien-image {
+  position: fixed;
+  bottom: 30px;
+  right: 380px;
+  width: 275px;
+  filter: drop-shadow(0 0 15px limegreen);
+}
