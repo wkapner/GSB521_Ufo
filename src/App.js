@@ -11,7 +11,7 @@ function App() {
 
   // Load CSV file automatically when the app starts
   useEffect(() => {
-    fetch('/ufoData.csv')
+    fetch('https://ufodata2.s3.us-east-2.amazonaws.com/ufoData.csv')
       .then(response => response.text())
       .then(csvText => {
         Papa.parse(csvText, {
